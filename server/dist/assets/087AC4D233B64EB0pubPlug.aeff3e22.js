@@ -1,0 +1,4 @@
+/*! 
+ Build based on gin-vue-admin 
+ Time : 1718874130000 */
+import{a,o as s,c as e,b as t,d as l,w as o,g as r,j as u,l as i,E as m}from"./087AC4D233B64EB0index.f7794d3b.js";/* empty css                               *//* empty css                              */import{_ as n}from"./087AC4D233B64EB0warningBar.4245c872.js";import{l as c}from"./087AC4D233B64EB0autoCode.cf105262.js";const p={class:"gva-form-box"},d={class:"p-4 bg-white dark:bg-slate-900"},B={class:"flex items-center gap-3"},g={__name:"pubPlug",setup(g){const f=a(""),v=async()=>{const a=await c({plugName:f.value});0===a.code&&u.success(a.msg)};return(a,u)=>{const c=i,g=m;return s(),e("div",p,[t("div",d,[l(n,{title:"目前只支持标准插件（通过插件模板生成的标准目录插件），非标准插件请自行打包"}),t("div",B,[l(c,{modelValue:f.value,"onUpdate:modelValue":u[0]||(u[0]=a=>f.value=a),placeholder:"插件模板处填写的【插件名】"},null,8,["modelValue"]),l(g,{type:"primary",onClick:v},{default:o((()=>[r("打包插件")])),_:1})])])])}}};export{g as default};
