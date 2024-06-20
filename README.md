@@ -63,11 +63,13 @@ http://127.0.0.1:6588
 ## 4. 项目架构
 
 #### 4.1 创建任务
-
+<img src="./server/docs/create_job.jpg">
 
 #### 4.2 查看任务
+<img src="./server/docs/job_list.jpg">
 
 #### 4.3 创建主机
+<img src="./server/docs/create_agent.jpg">
  
 
 
