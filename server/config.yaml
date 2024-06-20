@@ -187,7 +187,7 @@ sqlite:
     db-name: gva
     username: ""
     password: ""
-    path: D:\ProgramGo\lct-project\vue-godcron
+    path: ""
     engine: ""
     log-mode: error
     max-idle-conns: 10
