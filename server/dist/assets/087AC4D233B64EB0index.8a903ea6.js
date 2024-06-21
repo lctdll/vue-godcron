@@ -1,4 +1,0 @@
-/*! 
- Build based on gin-vue-admin 
- Time : 1718874130000 */
-import{m as s,u as e,o as t,c as n,b as l,d as a,w as r,E as u,g as i}from"./087AC4D233B64EB0index.f7794d3b.js";/* empty css                               */const o={class:"w-full h-screen bg-gray-50 flex items-center justify-center"},c={class:"flex flex-col items-center text-2xl gap-4"},f=l("img",{src:"/assets/087AC4D233B64EB0notFound.4e921f05.png"},null,-1),m=l("p",null,"页面被神秘力量吸走了（如果您是开源版请联系我们修复）",-1),p=l("p",{style:{"font-size":"18px","line-height":"40px"}},"常见问题为当前此角色无当前路由，如果确定要使用本路由，请到角色管理进行分配",-1),d=l("p",null,"↓",-1),g=l("img",{src:"/assets/087AC4D233B64EB0qm.dd0442fb.png",class:"w-16 h-16 mt-20"},null,-1),x=Object.assign({name:"Error"},{__name:"index",setup(x){const B=s(),h=e(),E=()=>{h.push({name:B.userInfo.authority.defaultRouter})};return(s,e)=>{const x=u;return t(),n("div",null,[l("div",o,[l("div",c,[f,m,p,d,g,a(x,{onClick:E},{default:r((()=>[i("返回首页")])),_:1})])])])}}});export{x as default};
