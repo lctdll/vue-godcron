@@ -9,6 +9,7 @@ import (
 
 	"go.uber.org/zap"
 	"gorm.io/gorm"
+	"vue-godcron/godcron/model"
 	"vue-godcron/model/manager"
 )
 
@@ -53,7 +54,7 @@ func RegisterTables() {
 		example.ExaFile{},
 		example.ExaCustomer{},
 		example.ExaFileChunk{},
-		example.ExaFileUploadAndDownload{}, manager.AgentTable{},
+		example.ExaFileUploadAndDownload{}, manager.AgentTable{}, godcron.AgtGroup{},
 	)
 	if err != nil {
 		global.GVA_LOG.Error("register table failed", zap.Error(err))

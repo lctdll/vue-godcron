@@ -71,6 +71,31 @@
   
  
     </el-drawer>
+    <!-- <el-table :data="orderDetails">
+      <el-table-column prop="operation" label="操作"></el-table-column>
+      <el-table-column prop="product" label="购买产品"></el-table-column>
+      <el-table-column prop="model" label="型号/规格"></el-table-column>
+      <el-table-column prop="price" label="单价"></el-table-column>
+      <el-table-column prop="quantity" label="数量">
+        <template #default="scope"> 
+          <el-input v-model="scope.row.quantity" autocomplete="off" placeholder="IP:PORT" @change="changeName" /> 
+             <el-button size="small" type="danger" @click="deleteRow(scope.$index)">
+               Delete
+              </el-button>
+           </template>
+      </el-table-column>
+      <el-table-column prop="subtotal" label="小计金额">
+        <template #default="scope"> 
+        <el-input v-model="scope.row.subtotal" autocomplete="off" placeholder="IP:PORT" @change="changeName" /> 
+           <el-button size="small" type="danger" @click="deleteRow(scope.$index)">
+             Delete
+            </el-button>
+         </template>
+      </el-table-column>
+      
+     
+    </el-table>
+    <el-button type="primary" @click="addOrderDetail">新增+</el-button> -->
 
 
     </div>
@@ -98,6 +123,30 @@ import { ElMessage, ElMessageBox } from 'element-plus'
 import { QuestionFilled, VideoCameraFilled } from '@element-plus/icons-vue'
 
 import { toDoc } from '@/utils/doc'
+const orderDetails = reactive([
+  {
+    operation: "",
+    product: "请选择",
+    model: "",
+    price: 0.00,
+    quantity: 0,
+    subtotal: 0.00,
+  },
+  // 其他预定义的行...
+])
+const addOrderDetail = ()  => {
+  orderDetails.push({
+    operation: "",
+    product: "请选择",
+    model: "",
+    price: 0.00,
+    quantity: 0,
+    subtotal: 0.00,
+  })
+}
+const deleteRow = (index) => {
+  orderDetails.splice(index, 1);
+};
 
 defineOptions({
   name: 'Menus',
