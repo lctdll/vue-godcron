@@ -86,6 +86,10 @@ func Routers() *gin.Engine {
 		managerRouter.AgentTableRouter.InitAgentTableRouter(PrivateGroup, PublicGroup)
 		managerRouter.AgentJobRouter.InitAgentTableRouter(PrivateGroup, PublicGroup)
 	}
+	{
+		godcronRouter := router.RouterGroupApp.Godcron
+		godcronRouter.InitAgtGroupRouter(PrivateGroup, PublicGroup)
+	}
 
 	global.GVA_LOG.Info("router register success")
 	return Router
