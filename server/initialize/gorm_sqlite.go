@@ -1,6 +1,7 @@
 package initialize
 
 import (
+	"fmt"
 	"github.com/glebarez/sqlite"
 	"gorm.io/gorm"
 	"vue-godcron/config"
@@ -14,7 +15,7 @@ func GormSqlite() *gorm.DB {
 	if s.Dbname == "" {
 		return nil
 	}
-
+	fmt.Println(s.Dsn())
 	if db, err := gorm.Open(sqlite.Open(s.Dsn()), internal.Gorm.Config(s.Prefix, s.Singular)); err != nil {
 		panic(err)
 	} else {

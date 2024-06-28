@@ -187,7 +187,7 @@ sqlite:
     db-name: gva
     username: ""
     password: ""
-    path: ../
+    path: ./
     engine: ""
     log-mode: error
     max-idle-conns: 10
