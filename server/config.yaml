@@ -6,8 +6,8 @@ aliyun-oss:
     bucket-url: yourBucketUrl
     base-path: yourBasePath
 autocode:
-    server-model: /model/%s
-    server-router: /router/%s
+    server-model: /%s/model/
+    server-router: /%s/router/
     server: /server
     server-api: /api/v1/%s
     server-plug: /plugin/%s
@@ -15,8 +15,8 @@ autocode:
     root: D:\ProgramGo\lct-project\vue-godcron
     web-table: /view
     web: /web/src
-    server-service: /service/%s
-    server-request: /model/%s/request/
+    server-service: /%s/service
+    server-request: /%s/model//request/
     web-api: /api
     web-form: /view
     transfer-restart: true
@@ -187,7 +187,7 @@ sqlite:
     db-name: gva
     username: ""
     password: ""
-    path: ""
+    path: ../
     engine: ""
     log-mode: error
     max-idle-conns: 10

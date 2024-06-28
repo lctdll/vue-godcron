@@ -16,6 +16,9 @@ import auth from '@/directive/auth'
 import { store } from '@/pinia'
 import App from './App.vue'
 import { initDom } from './utils/positionToCode'
+import PrimeVue from 'primevue/config';
+import Aura from '@primevue/themes/aura';
+import ToastService from 'primevue/toastservice';
 
 initDom()
 
@@ -23,6 +26,12 @@ const app = createApp(App)
 app.config.productionTip = false
 
 app
+    .use(PrimeVue,{
+        theme: {
+            preset: Aura
+        }
+    })
+    .use(ToastService)
     .use(run)
     .use(store)
     .use(auth)

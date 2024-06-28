@@ -70,6 +70,12 @@ http://127.0.0.1:6588
 
 #### 4.3 创建主机
 <img src="./server/docs/create_agent.jpg">
+
+#### 4.4 创建监控服务
+<img src="./server/docs/svc_add.jpg">
+
+#### 4.5 查看服务状态
+<img src="./server/docs/svc_list.png">
  
 
 

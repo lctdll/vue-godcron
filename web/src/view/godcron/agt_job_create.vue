@@ -47,14 +47,7 @@ import {
   addAgentJob,
 } from '@/api/manager/mangjob'
 import { ElMessage, ElMessageBox } from 'element-plus'
-  import {
-    defineComponent,
-    toRefs,
-    reactive,
-    ref,
-    getCurrentInstance
-  }
-  from 'vue'
+import { reactive, ref  } from 'vue'
 
 
 const page = ref(1)
